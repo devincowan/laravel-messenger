@@ -39,7 +39,7 @@ class Thread extends Eloquent
      * @var null|Models::user()|\Illuminate\Database\Eloquent\Model
      */
     protected $creatorCache;
-    
+
     /**
      * {@inheritDoc}
      */
@@ -322,7 +322,7 @@ class Thread extends Eloquent
      *
      * @return string
      */
-    public function participantsString($userId = null, $columns = ['name'])
+    public function participantsString($userId = null, $columns = ['email'])
     {
         $participantsTable = Models::table('participants');
         $usersTable = Models::table('users');
